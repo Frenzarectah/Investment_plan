@@ -1,3 +1,8 @@
+# Investment Plan Simulation [WIP]
+
+This is my first #React.js App with the using of #tailwindcss for the page style, Stay tuned it will be amazing!<br>
+=)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
