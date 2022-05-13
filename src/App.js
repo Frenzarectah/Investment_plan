@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import logo1 from './assets/UNITED.png';
+import logo2 from './assets/PROPERTIES.png';
+import Progress from './components/Progress/Progress';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo border-2 border-white" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App flex flex-row w-full h-screen">
+      <div class="w-1/3 h-full bg-[#35A0EE] text-white pt-12 pl-20">
+        <div class="flex flex-row">
+          <img src={logo1}></img>
+          <img src={logo2}></img>
+        </div>
+        <Progress/>  
+      </div>
     </div>
   );
 }
