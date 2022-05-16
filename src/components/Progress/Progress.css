@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
 
+#placeholder{
+    background-image:url("./assets/Rectangle.png");
+    background-repeat:no-repeat;
+}
 .montserrat{
     font-family: 'Montserrat Alternates';
 }

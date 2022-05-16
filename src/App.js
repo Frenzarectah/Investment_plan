@@ -8,8 +8,8 @@ function App() {
     <div className="App flex flex-row w-full h-screen">
       <div class="w-1/3 h-full bg-[#35A0EE] text-white pt-12 pl-20">
         <div class="flex flex-row">
-          <img src={logo1}></img>
-          <img src={logo2}></img>
+          <img alt="united" src={logo1}></img>
+          <img alt="propertier" src={logo2}></img>
         </div>
         <Progress/>  
       </div>
