@@ -9,7 +9,7 @@ function App() {
       <div class="w-1/3 h-full bg-[#35A0EE] text-white pt-12 pl-20">
         <div class="flex flex-row">
           <img alt="united" src={logo1}></img>
-          <img alt="propertier" src={logo2}></img>
+            <img alt="propertier" src={logo2}></img>
         </div>
         <Progress/>  
       </div>
