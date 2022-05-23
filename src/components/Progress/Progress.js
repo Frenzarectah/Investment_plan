@@ -5,6 +5,7 @@ import '../Progress/Progress.css';
 import rect_ from './assets/Rectangle.png';
 import rect_xs from './assets/Rectangle_xs.png';
 
+
 const Progress = (props)=>{    
     const {name, surname}  = props;
     console.log(name)

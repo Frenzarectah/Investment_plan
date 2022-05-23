@@ -2,14 +2,9 @@ import './App.css';
 import logo1 from './assets/UNITED.png';
 import logo2 from './assets/PROPERTIES.png';
 import Progress from './components/Progress/Progress';
+import tick from './components/Clock';
+import Clock from './components/Clock';
 import { ReactDOM } from 'react';
-
-const OBjSON ={
-  nome: "gesu",
-  width : "250px",
-  dio: "stronzo",
-  madonna:"troia"
-};
 
 
 function App() {
@@ -22,8 +17,10 @@ function App() {
             <img alt="propertier" src={logo2}></img>
         </div>
         <Progress name="nicola" surname="chimenti"/>  
-        <Progress name="mario" surname="rosso"/>
       </div>
+      <div id="clocki">
+        <Clock name="bianco" color="violet"/></div>
+        <Clock name="rosso" color="black"/>
     </div>
   );
 }
