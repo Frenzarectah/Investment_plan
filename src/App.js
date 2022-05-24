@@ -19,8 +19,8 @@ function App() {
         <Progress name="nicola" surname="chimenti"/>  
       </div>
       <div id="clocki">
-        <Clock name="bianco" color="violet"/></div>
-        <Clock name="rosso" color="black"/>
+        <Clock/>
+        </div>
     </div>
   );
 }
