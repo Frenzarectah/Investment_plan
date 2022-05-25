@@ -3,7 +3,7 @@ import logo1 from './assets/UNITED.png';
 import logo2 from './assets/PROPERTIES.png';
 import Progress from './components/Progress/Progress';
 import tick from './components/Clock';
-import Clock from './components/Clock';
+import Compt from './components/Clock';
 import { ReactDOM } from 'react';
 
 
@@ -19,8 +19,8 @@ function App() {
         <Progress name="nicola" surname="chimenti"/>  
       </div>
       <div id="clocki">
-        <Clock status={true}/>
-        <Clock status={false}/>
+        <Compt/>
+        <Compt/>
         </div>
     </div>
   );

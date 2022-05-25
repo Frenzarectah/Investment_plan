@@ -1,18 +1,32 @@
 import { render } from "@testing-library/react";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState} from "react";
+import { useReducer } from 'react';
 import { ReactDOM } from "react";
 import "../components/Clock.css";
 
-const Clock = (props)=>{
-    const {name, status} = props;
-    //const [pos,setPos] = useState({x:0, y:0});
-    if(status===true){
-    return(
-        <button>CIOL</button>
-    )}
-    else{
-        return(
-        <div>MANGUSTA</div>
-        )}
-    }
-export default Clock;
+const myReducer =(stato,azione)=>{
+    console.log(azione);
+    if (azione ==="add"){ return stato};
+    if (azione ==="delete"){ return stato};
+}
+
+const Compt =()=>{
+    const [stato, dispatch] = useReducer(myReducer,"actual");
+    const addOne = ()=> dispatch({
+        type:"add",
+        stato:"adding.."
+    });
+    const delOne =()=> dispatch({
+        type:"delete",
+        stato:"deleting..."
+    });
+return(
+    <div>
+        <div>{stato}</div>
+        <div style={{border:"2px red solid"}} onClick={addOne}>ADD</div>
+        <div style={{border:"2px red solid"}} onClick={delOne}> DELETE</div>
+    </div>
+)
+}
+
+export default Compt;
