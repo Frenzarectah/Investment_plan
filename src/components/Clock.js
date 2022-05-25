@@ -1,18 +1,18 @@
 import { render } from "@testing-library/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ReactDOM } from "react";
 import "../components/Clock.css";
 
 const Clock = (props)=>{
-    const {name, color} = props;
-    const [pos,setPos] = useState({x:0, y:0});
-    const settingPos = ()=> setPos({
-        ...pos, 
-        x: x30
-    });
+    const {name, status} = props;
+    //const [pos,setPos] = useState({x:0, y:0});
+    if(status===true){
     return(
-        <div onClick={settingPos}>{pos.x}</div>
-
-    )
-}
+        <button>CIOL</button>
+    )}
+    else{
+        return(
+        <div>MANGUSTA</div>
+        )}
+    }
 export default Clock;

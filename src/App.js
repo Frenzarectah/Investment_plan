@@ -19,7 +19,8 @@ function App() {
         <Progress name="nicola" surname="chimenti"/>  
       </div>
       <div id="clocki">
-        <Clock/>
+        <Clock status={true}/>
+        <Clock status={false}/>
         </div>
     </div>
   );
