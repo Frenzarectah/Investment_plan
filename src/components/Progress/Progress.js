@@ -11,9 +11,10 @@ const Progress = (props)=>{
                     <div id="placeholder" className="flex justify-center items-center">
                         <img style={{width:"11px",height:"11px"}} src={rect}/>
                     </div>
-                    <p className="pl-5 self-center">Contact Details</p>
+                    <p className="pl-5 self-center">{props.descr}</p>
             </div>
-                    <img class="mt-2" style={{width:"4px",height:"9px"}} src={rect_vert}/>
+                    <img class="mt-2 ml-3" style={{width:"4px",height:"9px"}} src={rect_vert}/>
+                    <img class="mt-2 ml-3" style={{width:"4px",height:"9px"}} src={rect_vert}/>
             </>
     );
 };

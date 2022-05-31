@@ -11,7 +11,9 @@ function App() {
             <img alt="propertier" src={logo2}></img>
         </div>
         <div id="progress_sect" className="pl-20 pt-56">
-          <Progress/>
+          <Progress descr="Contact Details"/>
+          <Progress descr="Investment Plants"/>
+          <Progress descr="Investment Details"/>
         </div>
       </div>
     </div>
