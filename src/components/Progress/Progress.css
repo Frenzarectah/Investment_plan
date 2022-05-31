@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
 
 #placeholder{
-    background-image:url("./assets/Rectangle.png");
+    background-image:url("./assets/Rect_big.png");
     background-repeat:no-repeat;
+    width:28px;
+    height:29px;
 }
 .montserrat{
     font-family: 'Montserrat Alternates';

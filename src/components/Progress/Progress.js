@@ -1,27 +1,21 @@
 import React, { Component } from 'react';
-import reactDom from 'react-dom';
-import { ReactDOM } from 'react';
 import '../Progress/Progress.css';
-import rect_ from './assets/Rectangle.png';
-import rect_xs from './assets/Rectangle_xs.png';
+import rect from './assets/Rect_littl.png';
+import rect_vert from './assets/rect_vertical.png';
 
 
 const Progress = (props)=>{    
-    const {name, surname}  = props;
-    console.log(name)
-    if(name === "mario"){
-        return(
+    return(
             <>
-                <div>MARIO</div>
+            <div className="text-left flex flex-row text-white montserrat">
+                    <div id="placeholder" className="flex justify-center items-center">
+                        <img style={{width:"11px",height:"11px"}} src={rect}/>
+                    </div>
+                    <p className="pl-5 self-center">Contact Details</p>
+            </div>
+                    <img class="mt-2" style={{width:"4px",height:"9px"}} src={rect_vert}/>
             </>
-    )}
-    else if(name !== "mario"){
-        return(
-            <>
-                <div>NON E' MARIO</div>
-            </>
-        )
-    };
+    );
 };
 
 
