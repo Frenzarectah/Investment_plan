@@ -11,12 +11,12 @@ function App() {
           <img alt="united" src={logo1}></img>
             <img alt="propertier" src={logo2}></img>
         </div>
-        <div id="progress_sect" className="pl-20 pt-44">
+        <div id="progress_sect" className="pl-20 pt-20">
           <Progress descr="Contact Details"/>
           <Progress descr="Investment Plants"/>
           <Progress descr="Investment Preferences"/>
         </div>
-        <div id="citation_sect" className="pt-10">
+        <div id="citation_sect" className="pl-20 pt-14">
           <Citation/>
       </div>
       </div>

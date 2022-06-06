@@ -3,3 +3,11 @@
 .montserrat{
     font-family:'Montserrat'
 }
+.citate{
+    position:relative;
+    top:-200px;
+    left:-20px;
+    background-image: url(./assets/cit.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
