@@ -8,10 +8,10 @@ import Citation from './components/Citation_box/Citation';
 export const globale = React.createContext();
 
 function App() {
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState("0");
   
   return (
-    <globale.Provider value={{page,setPage}}>
+    <globale.Provider value={[page,setPage]}>
     <div>{page}</div>
     <div className="App flex flex-row md:flex-column w-full h-14 md:h-screen">
       <div className="w-full md:w-1/3 h-full bg-[#35A0EE] sm:text-black md:text-white">
@@ -19,10 +19,10 @@ function App() {
           <img alt="united" src={logo1}></img>
             <img alt="propertier" src={logo2}></img>
         </div>
-        <div id="progress_sect" className="pl-20 pt-20">
-          <Progress descr="Contact Details"/>
-          <Progress descr="Investment Plants"/>
-          <Progress descr="Investment Preferences"/>
+        <div id="progress_sect" className="pl-20 pt-20">  
+          <Progress descr="Contact Details" num="0"/>
+          <Progress descr="Investment Plan" num="1"/>
+          <Progress descr="Investment Preferences" num="2"/>
         </div>
         <div id="citation_sect" className="pl-14 pt-14">
           <Citation/>
