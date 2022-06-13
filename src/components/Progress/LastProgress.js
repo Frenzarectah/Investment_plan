@@ -2,14 +2,16 @@ import React, { Component, useContext } from 'react';
 import '../Progress/Progress.css';
 import { globale } from "../../App";
 import rect from './assets/Rect_littl.png';
-import rect_vert from './assets/rect_vertical.png';
 
+/*
+COMPONENT WHO COMPOSES THE PROGRESS BAR ON THE SIDE OF SITE
+*/
 
 const LastProgress = (props) =>{
-    const descr = props.descr;
+    const {descr,num} = props;
     var op = "opacity-25";
     const [page,setPage] = useContext(globale);
-    if(props.num <= page) op="opacity-100";
+    if(num <= page) op="opacity-100";
     return(
         <div classname={op}>
         <div className="text-left flex flex-row text-black md:text-white lg:text-white text-lg montserrat_alt">
