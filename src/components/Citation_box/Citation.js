@@ -4,7 +4,8 @@ import '../Citation_box/Citation.css';
 
 const cit = {
     0:"We care about your time, that's why we created a 3-stage onboarding that will not take more than 5 minutes to complete",
-    1:"Save from thousands to millions on your deal. Secure the best possible. And get independent, unbiased advice for free"
+    1:"Save from thousands to millions on your deal. Secure the best possible. And get independent, unbiased advice for free",
+    2:"United Properties is about fast & easy searching, buying, selling and investing ever — online, with an expert by our side"
 }
 const Citation = () =>{
     const [page,setPage] = useContext(globale);
