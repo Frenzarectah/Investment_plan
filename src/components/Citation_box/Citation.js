@@ -3,16 +3,20 @@ import { globale } from "../../App";
 import '../Citation_box/Citation.css';
 
 const cit = {
-    0:"We care about your time, that's why we created a 3-stage onboarding that will not take more than 5 minutes to complete",
-    1:"Save from thousands to millions on your deal. Secure the best possible. And get independent, unbiased advice for free",
-    2:"United Properties is about fast & easy searching, buying, selling and investing ever — online, with an expert by our side"
+    0:{cit:"We care about your time, that's why we created a 3-stage onboarding that will not take more than 5 minutes to complete",name:"William Mac",title:"CO-FOUNDER, INVESTOR"},
+    1:{cit:"Save from thousands to millions on your deal. Secure the best possible. And get independent, unbiased advice for free",name:"Jodie Sears",title:"UNITED PROPERTIES' AGENT"},
+    2:{cit:"United Properties is about fast & easy searching, buying, selling and investing ever — online, with an expert by our side",name:"Ollie Mcmahon",title:"MANAGING DIRECTOR"}
 }
 const Citation = () =>{
     const [page,setPage] = useContext(globale);
     return(
         <>
-            <div style={{width:"320px",height:"200px"}} className="flex justify-center px-[20px] pt-[10px] items-center bg-white montserrat text-[#A4AEB4] text-md rounded">
-            <p>{cit[page]}</p>
+            <div style={{width:"320px",height:"200px"}} className="flex flex-col justify-center px-[20px] pt-[10px] items-start bg-white montserrat text-[#A4AEB4] text-md rounded">
+            <p>{cit[page].cit}</p>
+            <div className="mt-[10px] text-left w-full">
+                <p className="text-black font-semibold montserrat_alt">{cit[page].name}</p>
+                <p className="text-sm">{cit[page].title}</p>
+            </div>
             </div>               
             <div className="citate bg-white rounded shadow-black z-10 border border-[#35A0EE]" style={{width:"56px",height:"56px"}}></div>
         </>
