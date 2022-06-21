@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { globale } from "../../App";
 import '../Citation_box/Citation.css';
+import UP from './assets/UP.png';
 
 const cit = {
     0:{cit:"We care about your time, that's why we created a 3-stage onboarding that will not take more than 5 minutes to complete",name:"William Mac",title:"CO-FOUNDER, INVESTOR"},
@@ -16,6 +17,7 @@ const Citation = () =>{
             <div className="mt-[10px] text-left w-full">
                 <p className="text-black font-semibold montserrat_alt">{cit[page].name}</p>
                 <p className="text-sm">{cit[page].title}</p>
+                <p className="flex w-full justify-end"><img alt="up logo" src={UP}/></p>
             </div>
             </div>               
             <div className="citate bg-white rounded shadow-black z-10 border border-[#35A0EE]" style={{width:"56px",height:"56px"}}></div>

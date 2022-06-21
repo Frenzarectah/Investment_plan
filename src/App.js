@@ -5,7 +5,7 @@ import logo2 from './assets/PROPERTIES.png';
 import Progress from './components/Progress/Progress';
 import LastProgress from './components/Progress/LastProgress';
 import Citation from './components/Citation_box/Citation';
-
+import { BrowserRouter, Routes, Switch, Route } from 'react-router-dom';
 export const globale = React.createContext();
 
 function App() {
@@ -34,7 +34,14 @@ function App() {
           <Citation/>
       </div>
       </div>
-    </div>
+      <BrowserRouter>
+      <Routes>
+      <>
+        <Route path="/cita" element={<Citation/>}/>
+      </>
+      </Routes>
+      </BrowserRouter>
+      </div>
     </globale.Provider>
   );
 }
