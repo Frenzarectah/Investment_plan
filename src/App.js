@@ -5,14 +5,15 @@ import logo2 from './assets/PROPERTIES.png';
 import Progress from './components/Progress/Progress';
 import LastProgress from './components/Progress/LastProgress';
 import Citation from './components/Citation_box/Citation';
+import Page1 from './pages/Page1';
 import { BrowserRouter, Routes, Switch, Route } from 'react-router-dom';
 export const globale = React.createContext();
 
 function App() {
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(1);
   
   const setPageMax = ()=>{
-    if(page<=1) setPage(page+1);
+    if(page<=3) setPage(page+1);
   }
   return (
     <globale.Provider value={[page,setPage]}>
@@ -26,18 +27,19 @@ function App() {
             <img alt="propertier" src={logo2}></img>
         </div>
         <div id="progress_sect" className="pl-20 pt-20">  
-          <Progress descr="Contact Details" num="0"/>
-          <Progress descr="Investment Plan" num="1"/>
-          <LastProgress descr="Investment Preferences" num="2"/>
+          <Progress descr="Contact Details" num="1"/>
+          <Progress descr="Investment Plan" num="2"/>
+          <LastProgress descr="Investment Preferences" num="3"/>
         </div>
         <div id="citation_sect" className="pl-14 pt-14">
           <Citation/>
       </div>
       </div>
+      <div className='ml-[50px] mt-[36px] montserrat text-[#A4AEB4]'>STEP {page} OF 3</div>
       <BrowserRouter>
       <Routes>
       <>
-        <Route path="/cita" element={<Citation/>}/>
+        <Route path="/page1" element={<Page1/>}/>
       </>
       </Routes>
       </BrowserRouter>

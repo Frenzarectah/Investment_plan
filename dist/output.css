@@ -486,6 +486,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
+.ml-\[50px\] {
+  margin-left: 50px;
+}
+
+.mt-\[36px\] {
+  margin-top: 36px;
+}
+
 .flex {
   display: flex;
 }
@@ -606,6 +614,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-right {
   text-align: right;
+}
+
+.font-\[\#A4AEB4\] {
+  font-family: #A4AEB4;
 }
 
 .text-sm {
