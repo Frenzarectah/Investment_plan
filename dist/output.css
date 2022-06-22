@@ -470,6 +470,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
+.ml-\[50px\] {
+  margin-left: 50px;
+}
+
+.mt-\[36px\] {
+  margin-top: 36px;
+}
+
 .mt-\[10px\] {
   margin-top: 10px;
 }
@@ -486,12 +494,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
-.ml-\[50px\] {
-  margin-left: 50px;
+.mr-\[50px\] {
+  margin-right: 50px;
 }
 
-.mt-\[36px\] {
-  margin-top: 36px;
+.block {
+  display: block;
 }
 
 .flex {
@@ -508,6 +516,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-full {
   width: 100%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .flex-row {
@@ -534,16 +562,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
 .self-center {
   align-self: center;
-}
-
-.justify-self-start {
-  justify-self: start;
-}
-
-.justify-self-end {
-  justify-self: end;
 }
 
 .rounded {
@@ -557,6 +585,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-\[\#35A0EE\] {
   --tw-border-opacity: 1;
   border-color: rgb(53 160 238 / var(--tw-border-opacity));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-\[\#35A0EE\] {
@@ -612,14 +645,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: left;
 }
 
-.text-right {
-  text-align: right;
-}
-
-.font-\[\#A4AEB4\] {
-  font-family: #A4AEB4;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -644,6 +669,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(164 174 180 / var(--tw-text-opacity));
 }
 
+.text-\[\#2696E8\] {
+  --tw-text-opacity: 1;
+  color: rgb(38 150 232 / var(--tw-text-opacity));
+}
+
 .shadow-black {
   --tw-shadow-color: #000;
   --tw-shadow: var(--tw-shadow-colored);
@@ -661,6 +691,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.hover\:underline:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 @media (min-width: 640px) {

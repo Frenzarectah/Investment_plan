@@ -12,14 +12,16 @@ export const globale = React.createContext();
 function App() {
   const [page, setPage] = useState(1);
   
+  const openModal = ()=> document.getElementById("modal").style.display="block";
+  
   const setPageMax = ()=>{
     if(page<=3) setPage(page+1);
   }
   return (
     <globale.Provider value={[page,setPage]}>
-    <div>{page}</div>
-    <p className="text-black" onClick={()=>setPageMax()}>CLICK +1</p>
-    <p className='text-black' onClick={()=>setPage(page-1)}>CLICK -1</p>
+    <div id="modal">
+        <p className='montserrat'>If you need any help, please call 050/455660 or send an email to helpdesk@unitedproperties.com</p>
+    </div>
     <div className="App flex flex-row md:flex-column w-full h-14 md:h-screen">
       <div className="w-full md:w-1/3 h-full bg-[#35A0EE] sm:text-black md:text-white">
         <div id="logo_sect" className="flex flex-row text-left px-[15%] py-[5%] md:pt-12 md:pl-20">
@@ -35,7 +37,10 @@ function App() {
           <Citation/>
       </div>
       </div>
-      <div className='ml-[50px] mt-[36px] montserrat text-[#A4AEB4]'>STEP {page} OF 3</div>
+      <div className='w-2/3 border border-black ml-[50px] mt-[36px] mr-[50px] flex justify-between montserrat'>
+        <div className='text-[#A4AEB4]'>STEP {page} OF 3</div>
+        <div>Lost or have trouble? <a href="#" className='text-[#2696E8] hover:underline' onClick={()=>openModal()}>Get Help!</a></div>
+      </div>
       <BrowserRouter>
       <Routes>
       <>
@@ -44,6 +49,10 @@ function App() {
       </Routes>
       </BrowserRouter>
       </div>
+      <div>{page}</div>
+    <p className="text-black" onClick={()=>setPageMax()}>CLICK +1</p>
+    <p className='text-black' onClick={()=>setPage(page-1)}>CLICK -1</p>
+    
     </globale.Provider>
   );
 }
