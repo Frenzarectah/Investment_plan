@@ -7,18 +7,22 @@ import LastProgress from './components/Progress/LastProgress';
 import Citation from './components/Citation_box/Citation';
 import Page1 from './pages/Page1';
 import { BrowserRouter, Routes, Switch, Route } from 'react-router-dom';
-export const globale = React.createContext();
+export const globale = React.createContext(); //context creation in main App
 
 function App() {
+  //setting the state
   const [page, setPage] = useState(1);
-  
+
+  //setting two funct to open/close the help modal
   const openModal = ()=> document.getElementById("modal").style.display="block";
   const closeModal = ()=> document.getElementById("modal").style.display="none";
   
-  const setPageMax = ()=>{
-    if(page<=3) setPage(page+1);
-  }
+  //setting higher level setter functs to limit the state "page"
+  const setPageMax = ()=> page<3?setPage(page+1):setPage(page);
+  const setPageMin = ()=> page>1?setPage(page-1):setPage(page);
+  
   return (
+    //takes the status and puts into context
     <globale.Provider value={[page,setPage]}>
     <div id="modal">
         <p className="header p-[5px] flex justify-between"><p>NEED HELP?</p><span onClick={()=>closeModal()}>X</span></p>
@@ -58,7 +62,7 @@ function App() {
       </div>
       <div>{page}</div>
     <p className="text-black" onClick={()=>setPageMax()}>CLICK +1</p>
-    <p className='text-black' onClick={()=>setPage(page-1)}>CLICK -1</p>
+    <p className='text-black' onClick={()=>setPageMin()}>CLICK -1</p>
     
     </globale.Provider>
   );
