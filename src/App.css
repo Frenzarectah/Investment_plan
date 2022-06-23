@@ -1,4 +1,7 @@
 #modal{
+  display:flex;
+  justify-content:center;
+  align-items:center;
   border:1px solid red;
   position:absolute;
   text-align:center;
@@ -10,4 +13,11 @@
   width:300px;
   height:150px;
   color:black;
+  border-radius:5px;
+}
+#modal .header{
+  margin-bottom:5px;
+  height:30px;
+  background-color:#35A0EE;
+  color:white;
 }
