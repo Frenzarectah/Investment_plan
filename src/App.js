@@ -9,6 +9,12 @@ import Page1 from './pages/Page1';
 import { BrowserRouter, Routes, Switch, Route } from 'react-router-dom';
 export const globale = React.createContext(); //context creation in main App
 
+const pageInfo = {
+  1:{title:"Contact Details",subtitle:"Welcome to United Properties, we are glad to see you! Let’s get started by letting us know a little bit about you"},
+  2:{title:"Investment plans",subtitle:"Let us know about your investment plans. This will help us get you to the right expert who will help you further"},
+  3:{title:"investment details",subtitle:"This will help us figure out what your investment options are so that we can show you only possibly intresting for you deals"}
+}
+
 function App() {
   //setting the state
   const [page, setPage] = useState(1);
@@ -23,12 +29,11 @@ function App() {
   
   return (
     //takes the status and puts into context
-    <globale.Provider value={[page,setPage]}>
+    <globale.Provider value={[page,setPage,pageInfo]}>
     <div id="modal">
         <p className="header p-[5px] flex justify-between"><p>NEED HELP?</p><span onClick={()=>closeModal()}>X</span></p>
         <p className='montserrat'>If you do, please call 050/455660 or send an email to helpdesk@unitedproperties.com</p>
     </div>
-
     <div className="App flex flex-row md:flex-column w-full h-14 md:h-screen">
       <div className="w-full md:w-1/3 h-full bg-[#35A0EE] sm:text-black md:text-white">
         <div id="logo_sect" className="flex flex-row text-left px-[15%] py-[5%] md:pt-12 md:pl-20">
@@ -36,9 +41,9 @@ function App() {
             <img alt="propertier" src={logo2}></img>
         </div>
         <div id="progress_sect" className="pl-20 pt-20">  
-          <Progress descr="Contact Details" num="1"/>
-          <Progress descr="Investment Plan" num="2"/>
-          <LastProgress descr="Investment Preferences" num="3"/>
+          <Progress descr={pageInfo[page].title} num="1"/>
+          <Progress descr={pageInfo[2].title} num="2"/>
+          <LastProgress descr={pageInfo[3].title} num="3"/>
         </div>
         <div id="citation_sect" className="pl-14 pt-14">
           <Citation/>
