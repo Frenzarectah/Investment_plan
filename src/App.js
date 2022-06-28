@@ -41,7 +41,7 @@ function App() {
             <img alt="propertier" src={logo2}></img>
         </div>
         <div id="progress_sect" className="pl-20 pt-20">  
-          <Progress descr={pageInfo[page].title} num="1"/>
+          <Progress descr={pageInfo[1].title} num="1"/>
           <Progress descr={pageInfo[2].title} num="2"/>
           <LastProgress descr={pageInfo[3].title} num="3"/>
         </div>
