@@ -470,8 +470,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
-.ml-\[50px\] {
-  margin-left: 50px;
+.ml-\[117px\] {
+  margin-left: 117px;
 }
 
 .mt-\[36px\] {
@@ -484,6 +484,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-\[50px\] {
   margin-top: 50px;
+}
+
+.mr-\[245px\] {
+  margin-right: 245px;
+}
+
+.mt-\[12px\] {
+  margin-top: 12px;
 }
 
 .mt-\[10px\] {
@@ -500,10 +508,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-2 {
   margin-bottom: 0.5rem;
-}
-
-.mt-\[12px\] {
-  margin-top: 12px;
 }
 
 .block {
@@ -637,9 +641,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: left;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-\[28px\] {
+  font-size: 28px;
 }
 
 .text-sm {
@@ -650,10 +653,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-\[28px\] {
-  font-size: 28px;
 }
 
 .font-semibold {

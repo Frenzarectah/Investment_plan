@@ -12,7 +12,7 @@ export const globale = React.createContext(); //context creation in main App
 const pageInfo = {
   1:{title:"Contact Details",subtitle:"Welcome to United Properties, we are glad to see you! Let’s get started by letting us know a little bit about you"},
   2:{title:"Investment plans",subtitle:"Let us know about your investment plans. This will help us get you to the right expert who will help you further"},
-  3:{title:"investment details",subtitle:"This will help us figure out what your investment options are so that we can show you only possibly intresting for you deals"}
+  3:{title:"Investment details",subtitle:"This will help us figure out what your investment options are so that we can show you only possibly intresting for you deals"}
 }
 
 function App() {
@@ -49,7 +49,7 @@ function App() {
           <Citation/>
       </div>
       </div>
-      <div className='w-2/3 border border-black ml-[50px] mt-[36px] mr-[50px] montserrat flex flex-col'>
+      <div className='w-2/3 border border-black ml-[117px] mt-[36px] mr-[50px] montserrat flex flex-col'>
         <div className='flex flex-row justify-between'>
           <div className='text-[#A4AEB4]'>STEP {page} OF 3</div>
           <div>Lost or have trouble? <a href="#" className='text-[#2696E8] hover:underline' onClick={()=>openModal()}>Get Help!</a></div>
@@ -58,7 +58,7 @@ function App() {
           <BrowserRouter>
             <Routes>
             <>
-              <Route path="/page1" element={<Page1/>}/>
+              <Route path="/" element={<Page1/>}/>
             </>
             </Routes>
           </BrowserRouter>

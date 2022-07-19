@@ -12,7 +12,7 @@ const Citation = () =>{
     const [page,setPage] = useContext(globale);
     return(
         <>
-            <div style={{width:"320px",height:"200px"}} className="flex flex-col justify-center px-[20px] pt-[10px] items-start bg-white montserrat text-[#A4AEB4] text-md rounded">
+            <div style={{width:"320px",height:"230px"}} className="flex flex-col justify-center px-[20px] pt-[10px] items-start bg-white montserrat text-[#A4AEB4] text-md rounded">
             <p>{cit[page].cit}</p>
             <div className="mt-[10px] text-left w-full">
                 <p className="text-black font-semibold montserrat_alt">{cit[page].name}</p>
