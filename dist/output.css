@@ -470,10 +470,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
-.m-auto {
-  margin: auto;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -512,6 +508,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 10px;
 }
 
+.mt-\[30px\] {
+  margin-top: 30px;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -522,14 +522,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-2 {
   margin-bottom: 0.5rem;
-}
-
-.mt-\[59px\] {
-  margin-top: 59px;
-}
-
-.mt-\[30px\] {
-  margin-top: 30px;
 }
 
 .block {
@@ -556,52 +548,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 66.666667%;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-\[271px\] {
-  width: 271px;
-}
-
-.w-\[250px\] {
-  width: 250px;
+.w-\[270px\] {
+  width: 270px;
 }
 
 .w-\[230px\] {
   width: 230px;
 }
 
-.w-\[562px\] {
-  width: 562px;
-}
-
-.w-\[550px\] {
-  width: 550px;
-}
-
-.w-\[520px\] {
-  width: 520px;
-}
-
-.w-\[530px\] {
-  width: 530px;
-}
-
-.w-\[525px\] {
-  width: 525px;
-}
-
-.w-\[260px\] {
-  width: 260px;
-}
-
-.w-\[270px\] {
-  width: 270px;
-}
-
 .w-\[540px\] {
   width: 540px;
+}
+
+.w-\[130px\] {
+  width: 130px;
 }
 
 .flex-row {
@@ -620,6 +580,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
+.items-baseline {
+  align-items: baseline;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -632,16 +596,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.justify-around {
-  justify-content: space-around;
-}
-
 .self-center {
   align-self: center;
-}
-
-.justify-self-center {
-  justify-self: center;
 }
 
 .rounded {
@@ -650,10 +606,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border {
   border-width: 1px;
-}
-
-.border-b-4 {
-  border-bottom-width: 4px;
 }
 
 .border-b-2 {
@@ -732,10 +684,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: left;
 }
 
-.align-baseline {
-  vertical-align: baseline;
-}
-
 .text-\[28px\] {
   font-size: 28px;
 }
@@ -753,13 +701,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 21px;
 }
 
+.text-\[16px\] {
+  font-size: 16px;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-\[16px\] {
-  font-size: 16px;
 }
 
 .font-semibold {

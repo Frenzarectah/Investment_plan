@@ -1,0 +1,23 @@
+#privacy{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border:1px solid red;
+  position:absolute;
+  text-align:center;
+  top:50%;
+  box-shadow:10px 5px 10px #dcdcdc;
+  left:50%;
+  display:none;
+  background-color:white;
+  width:500px;
+  height:250px;
+  color:black;
+  border-radius:5px;
+}
+  #privacy .header{
+    margin-bottom:5px;
+    height:30px;
+    background-color:#35A0EE;
+    color:white;
+  }

@@ -5,7 +5,8 @@ import arrow from "./assets/arrow.png";
 
 const Form = () =>{
     const [page,setPage] = useContext(globale);
-    if (page === 1){
+    //function to open the privacy modal
+    const openPrivacy = () => document.getElementById("privacy").style.display="block";  
         return(
             <form className="montserrat w-100 flex flex-col">
                 <div className="flex flex-row justify-between">
@@ -27,17 +28,16 @@ const Form = () =>{
                 <div className="w-[540px] mt-[30px] flex flex-col mx-auto">
                    <div className="text-[21px] extrabold text-black">Privacy Policy</div>
                    <div className="text-[16px] text-[#a4aeb4] my-[12px]">We know you care about how your personal information is used and shared, so we take your privacy seriously</div>
-                   <div className="text-[16px] text-[#2696E8] flex flex-row align-center"><span>Expand privacy policy</span><img style={{width:"16px",height:"8px"}} src={arrow}/></div> 
+                   <div className="text-[16px] text-[#2696E8] flex flex-row items-baseline">
+                    <span>Expand privacy policy</span>
+                        <a href="#" onclick={()=>openPrivacy()}>  
+                            <img style={{width:"16px",height:"8px"}} src={arrow}/>
+                        </a>
+                    </div> 
                 </div>
             </form>
-        )}
-    else{
-        return(
-            <>
-                <div>diverso da 1</div>
-            </>
         )
-    }
 }
+
 
 export default Form;

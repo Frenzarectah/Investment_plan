@@ -5,8 +5,7 @@ import logo2 from './assets/PROPERTIES.png';
 import Progress from './components/Progress/Progress';
 import LastProgress from './components/Progress/LastProgress';
 import Citation from './components/Citation_box/Citation';
-import Page1 from './pages/Page1';
-import { BrowserRouter, Routes, Switch, Route } from 'react-router-dom';
+import Page from './pages/Page';
 export const globale = React.createContext(); //context creation in main App
 
 const pageInfo = {
@@ -18,22 +17,30 @@ const pageInfo = {
 function App() {
   //setting the state
   const [page, setPage] = useState(1);
-
+  
   //setting two funct to open/close the help modal
   const openModal = ()=> document.getElementById("modal").style.display="block";
   const closeModal = ()=> document.getElementById("modal").style.display="none";
   
-  //setting higher level setter functs to limit the state "page"
+  //setting funct to close the privacy
+  const closePrivacy = ()=> document.getElementById("privacy").style.display="none";  
+ 
+  //setting higher level setter functs to limit the "page" state
   const setPageMax = ()=> page<3?setPage(page+1):setPage(page);
   const setPageMin = ()=> page>1?setPage(page-1):setPage(page);
   
   return (
-    //takes the status and puts into context
+    //takes the status and puts it into context
     <globale.Provider value={[page,setPage,pageInfo]}>
     <div id="modal">
         <p className="header p-[5px] flex justify-between"><p>NEED HELP?</p><span onClick={()=>closeModal()}>X</span></p>
         <p className='montserrat'>If you do, please call 050/455660 or send an email to helpdesk@unitedproperties.com</p>
     </div>
+    <div id="privacy">
+        <p className="header p-[5px] flex justify-between"><p>Privacy Policy</p><span onClick={()=>closePrivacy()}>X</span></p>
+        <p className='montserrat'>If you do, please call 050/455660 or send an email to helpdesk@unitedproperties.com</p>
+    </div>
+    
     <div className="App flex flex-row md:flex-column w-full h-14 md:h-screen">
       <div className="w-full md:w-1/3 h-full bg-[#35A0EE] sm:text-black md:text-white">
         <div id="logo_sect" className="flex flex-row text-left px-[15%] py-[5%] md:pt-12 md:pl-20">
@@ -55,13 +62,7 @@ function App() {
           <div>Lost or have trouble? <a href="#" className='text-[#2696E8] hover:underline' onClick={()=>openModal()}>Get Help!</a></div>
       </div>
       <div id="page_sect" className='montserrat'>  
-          <BrowserRouter>
-            <Routes>
-            <>
-              <Route path="/" element={<Page1/>}/>
-            </>
-            </Routes>
-          </BrowserRouter>
+          <Page/>
       </div>
       </div>
       </div>

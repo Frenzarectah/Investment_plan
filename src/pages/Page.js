@@ -2,8 +2,8 @@ import React, {useContext } from 'react';
 import { globale } from '../App';
 import '../App.css';
 import Form from '../components/Form/Form';
-
-const Page1 = () =>{
+import { BrowserRouter, Routes, Switch, Route } from 'react-router-dom';
+const Page = () =>{
     const [page,setPage,pageInfo] = useContext(globale);
     return(
         <div className='mt-[50px] mr-[245px] flex flex-col'>
@@ -14,9 +14,17 @@ const Page1 = () =>{
                 {pageInfo[page].subtitle}
             </div>
             <div id="page_form">
-                <Form refPage={page}/>
+            <BrowserRouter>
+            <Routes>
+            <>
+              <Route path="/" element={<Form/>}/>
+              <Route path="/page1" element={<Form/>}/>
+              <Route path="/page2" element={<Form/>}/>
+            </>
+            </Routes>
+          </BrowserRouter>
             </div>
         </div>
     )
 }
-export default Page1;
+export default Page;
