@@ -30,7 +30,7 @@ const Form = () =>{
                    <div className="text-[16px] text-[#a4aeb4] my-[12px]">We know you care about how your personal information is used and shared, so we take your privacy seriously</div>
                    <div className="text-[16px] text-[#2696E8] flex flex-row items-baseline">
                     <span>Expand privacy policy</span>
-                        <a href="#" onclick={()=>openPrivacy()}>  
+                        <a href="#" onClick={()=>openPrivacy()}>  
                             <img style={{width:"16px",height:"8px"}} src={arrow}/>
                         </a>
                     </div> 

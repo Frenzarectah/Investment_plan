@@ -524,6 +524,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
+.mt-\[81px\] {
+  margin-top: 81px;
+}
+
+.mr-0 {
+  margin-right: 0px;
+}
+
 .block {
   display: block;
 }
@@ -558,10 +566,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[540px\] {
   width: 540px;
-}
-
-.w-\[130px\] {
-  width: 130px;
 }
 
 .flex-row {
@@ -678,6 +682,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-5 {
   padding-left: 1.25rem;
+}
+
+.pl-12 {
+  padding-left: 3rem;
+}
+
+.pl-10 {
+  padding-left: 2.5rem;
 }
 
 .text-left {

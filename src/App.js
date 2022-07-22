@@ -38,9 +38,8 @@ function App() {
     </div>
     <div id="privacy">
         <p className="header p-[5px] flex justify-between"><p>Privacy Policy</p><span onClick={()=>closePrivacy()}>X</span></p>
-        <p className='montserrat'>If you do, please call 050/455660 or send an email to helpdesk@unitedproperties.com</p>
+        <p className="montserrat">Privacy is Dead</p>
     </div>
-    
     <div className="App flex flex-row md:flex-column w-full h-14 md:h-screen">
       <div className="w-full md:w-1/3 h-full bg-[#35A0EE] sm:text-black md:text-white">
         <div id="logo_sect" className="flex flex-row text-left px-[15%] py-[5%] md:pt-12 md:pl-20">
@@ -52,7 +51,7 @@ function App() {
           <Progress descr={pageInfo[2].title} num="2"/>
           <LastProgress descr={pageInfo[3].title} num="3"/>
         </div>
-        <div id="citation_sect" className="pl-14 pt-14">
+        <div id="citation_sect" className="pl-10 pt-14">
           <Citation/>
       </div>
       </div>
@@ -68,8 +67,7 @@ function App() {
       </div>
       <div>{page}</div>
     <p className="text-black" onClick={()=>setPageMax()}>CLICK +1</p>
-    <p className='text-black' onClick={()=>setPageMin()}>CLICK -1</p>
-    
+    <p className='text-black' onClick={()=>setPageMin()}>CLICK -1</p>    
     </globale.Provider>
   );
 }

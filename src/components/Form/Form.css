@@ -5,13 +5,13 @@
   border:1px solid red;
   position:absolute;
   text-align:center;
-  top:50%;
+  top:25%;
   box-shadow:10px 5px 10px #dcdcdc;
   left:50%;
   display:none;
   background-color:white;
-  width:500px;
-  height:250px;
+  width:200px;
+  height:150px;
   color:black;
   border-radius:5px;
 }
