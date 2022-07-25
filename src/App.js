@@ -24,10 +24,6 @@ function App() {
   
   //setting funct to close the privacy
   const closePrivacy = ()=> document.getElementById("privacy").style.display="none";  
- 
-  //setting higher level setter functs to limit the "page" state
-  const setPageMax = ()=> page<3?setPage(page+1):setPage(page);
-  const setPageMin = ()=> page>1?setPage(page-1):setPage(page);
   
   return (
     //takes the status and puts it into context
@@ -64,10 +60,7 @@ function App() {
           <Page/>
       </div>
       </div>
-      </div>
-      <div>{page}</div>
-    <p className="text-black" onClick={()=>setPageMax()}>CLICK +1</p>
-    <p className='text-black' onClick={()=>setPageMin()}>CLICK -1</p>    
+      </div> 
     </globale.Provider>
   );
 }
