@@ -8,7 +8,7 @@ const Page = () =>{
     const [page,setPage,pageInfo] = useContext(globale);
     return(
         <>
-        <div className='mt-[50px] mr-[245px] flex flex-col'>
+        <div className='mt-[20px] mr-[245px] flex flex-col'>
             <div className='montserrat-alt text-black extrabold text-[28px]'>
                 {pageInfo[page].title}
             </div>

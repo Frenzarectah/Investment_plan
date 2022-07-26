@@ -8,22 +8,22 @@ const Form = () =>{
     //function to open the privacy modal
     const openPrivacy = () => document.getElementById("privacy").style.display="block";  
         return(
-            <form className="montserrat w-100 flex flex-col">
+            <form name="register_form" className="montserrat w-100 flex flex-col">
                 <div className="flex flex-row justify-between">
-                    <label for="name" className="w-[270px] text-[14px] text-[#A4AEB4]">Full Name:</label>
-                    <label for="number" className="w-[230px] text-[14px] text-[#A4AEB4]">Number:</label>
+                    <label className="w-[270px] text-[14px] text-[#A4AEB4]">Full Name:</label>
+                    <label className="w-[230px] text-[14px] text-[#A4AEB4]">Number:</label>
                 </div>
                 <div className="flex flex-row justify-between">
-                    <input type="text" id="name" className="w-[270px] text-[21px] text-black border-b-2 border-[#D5D9DC]" required></input>
-                    <input type="tel" id="number" className="w-[230px] text-[21px] text-black border-b-2 border-[#D5D9DC]" required></input>
+                    <input type="text" name="name" className="w-[270px] text-[21px] text-black border-b-2 border-[#D5D9DC]" required></input>
+                    <input type="tel" name="number" className="w-[230px] text-[21px] text-black border-b-2 border-[#D5D9DC]" required></input>
                 </div>
                 <div className="w-[540px] flex flex-col mx-auto">
-                    <label for="mail" className="text-[14px] text-[#A4AEB4]">Email Address:</label>
-                    <input type="email" id="mail" className="text-[21px] text-black border-b-2 border-[#D5D9DC]" required></input>
+                    <label className="text-[14px] text-[#A4AEB4]">Email Address:</label>
+                    <input type="email" name="mail" className="text-[21px] text-black border-b-2 border-[#D5D9DC]" required></input>
                 </div>
                 <div className="w-[540px] flex flex-col mx-auto">
-                    <label for="country" className="text-[14px] text-[#A4AEB4]">Country:</label>
-                    <input type="email" id="country" className="text-[21px] text-black border-b-2 border-[#D5D9DC]" required></input>
+                    <label className="text-[14px] text-[#A4AEB4]">Country:</label>
+                    <input type="email" name="country" className="text-[21px] text-black border-b-2 border-[#D5D9DC]" required></input>
                 </div>
                 <div className="w-[540px] mt-[30px] flex flex-col mx-auto">
                    <div className="text-[21px] extrabold text-black">Privacy Policy</div>

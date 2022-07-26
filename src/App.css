@@ -9,9 +9,6 @@
 .extrabold{
   font-weight:900;
 }
-label{
-  margin:36px 0 5px;
-}
 
 #modal{
   display:flex;

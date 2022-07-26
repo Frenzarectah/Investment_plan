@@ -30,15 +30,15 @@ function App() {
     <globale.Provider value={[page,setPage,pageInfo]}>
     <div id="modal">
         <p className="header p-[5px] flex justify-between"><p>NEED HELP?</p><span onClick={()=>closeModal()}>X</span></p>
-        <p className='montserrat'>If you do, please call 050/455660 or send an email to helpdesk@unitedproperties.com</p>
+        <p className='align-self-center montserrat'>If you do, please call <a href="tel:050/455660">050/455660</a> or send an email at <a href="mailto:helpdesk@unitedproperties.com">this</a> address</p>
     </div>
     <div id="privacy">
         <p className="header p-[5px] flex justify-between"><p>Privacy Policy</p><span onClick={()=>closePrivacy()}>X</span></p>
         <p className="montserrat">Privacy is Dead</p>
     </div>
-    <div className="App flex flex-row md:flex-column w-full h-14 md:h-screen">
+    <div className="App flex flex-row md:flex-column w-full h-full md:h-screen">
       <div className="w-full md:w-1/3 h-full bg-[#35A0EE] sm:text-black md:text-white">
-        <div id="logo_sect" className="flex flex-row text-left px-[15%] py-[5%] md:pt-12 md:pl-20">
+        <div id="logo_sect" className="flex flex-row text-left mt-[5px] px-[15%] py-[5%]">
           <img alt="united" src={logo1}></img>
             <img alt="propertier" src={logo2}></img>
         </div>
@@ -47,11 +47,11 @@ function App() {
           <Progress descr={pageInfo[2].title} num="2"/>
           <LastProgress descr={pageInfo[3].title} num="3"/>
         </div>
-        <div id="citation_sect" className="pl-10 pt-14">
+        <div id="citation_sect" className="pl-6 pr-6 pt-14">
           <Citation/>
       </div>
       </div>
-      <div className='w-2/3 border border-black ml-[117px] mt-[36px] mr-[50px] montserrat flex flex-col'>
+      <div className='w-2/3 border border-black ml-[95px] mt-[10px] mr-[50px] montserrat flex flex-col'>
         <div className='flex flex-row justify-between'>
           <div className='text-[#A4AEB4]'>STEP {page} OF 3</div>
           <div>Lost or have trouble? <a href="#" className='text-[#2696E8] hover:underline' onClick={()=>openModal()}>Get Help!</a></div>
