@@ -3,7 +3,14 @@ import { globale } from "../../App";
 import App from "../../App";
 import arrow from "./assets/arrow_left.png";
 const Footer = () =>{
-
+    let userDatas = 
+    {
+        name:"",
+        number:"",
+        mail:"",
+        country:"",
+        range:"0.0"
+    };
     const [page,setPage,pageInfo] = useContext(globale);
     //setting higher level setter functs to limit the "page" state
   
@@ -11,16 +18,9 @@ const Footer = () =>{
     const setPageMin = ()=> page>1?setPage(page-1):setPage(page);
     //settin the funct to save data on a pseudo-db (an object)
     const nextStep1 = ()=>{
-        let userDatas = 
-        {
-            name:"",
-            number:"",
-            mail:"",
-            country:"",
-            range:"0.0"
-        };
         Object.keys(userDatas).forEach((items)=>{
-            userDatas[items] = document.forms["register_form"][items.toString()].value;
+            userDatas[items] = document.forms["register_form"][items.toString()].value
+            console.log(userDatas);
         });
     }    
     return(
