@@ -3,8 +3,7 @@ import { globale } from "../../App";
 import '../Form/Form.css';
 import arrow from "./assets/arrow.png";
 
-const Form = () =>{
-    const [page,setPage] = useContext(globale);
+const Form = (page) =>{
     //function to open the privacy modal
     const openPrivacy = () => document.getElementById("privacy").style.display="block";  
         return(

@@ -8,6 +8,15 @@ import Citation from './components/Citation_box/Citation';
 import Page from './pages/Page';
 export const globale = React.createContext(); //context creation in main App
 
+let userDatas = 
+{
+    name:"",
+    number:"",
+    mail:"",
+    country:"",
+    range:"0.0"
+};
+export const userDB = React.createContext(userDatas);
 const pageInfo = {
   1:{title:"Contact Details",subtitle:"Welcome to United Properties, we are glad to see you! Let’s get started by letting us know a little bit about you"},
   2:{title:"Investment plans",subtitle:"Let us know about your investment plans. This will help us get you to the right expert who will help you further"},

@@ -1,16 +1,10 @@
 import React,{useContext} from "react";
-import { globale } from "../../App";
+import { globale, userDB } from "../../App";
 import App from "../../App";
 import arrow from "./assets/arrow_left.png";
+
 const Footer = () =>{
-    let userDatas = 
-    {
-        name:"",
-        number:"",
-        mail:"",
-        country:"",
-        range:"0.0"
-    };
+    const userDatas = useContext(userDB);
     const [page,setPage,pageInfo] = useContext(globale);
     //setting higher level setter functs to limit the "page" state
   
@@ -25,7 +19,7 @@ const Footer = () =>{
     }    
     return(
         <footer className="mt-[15px] mr-0 w-full flex flex-row justify-between items-baseline">
-            <div className="w-1/3 text-[16px] text-[#2696E8] flex flex-row items-baseline">
+            <div className="w-1/3 ml-[12px] text-[16px] text-[#2696E8] flex flex-row items-baseline">
             <a href="#" onClick={()=>setPageMin()}>  
                 <img style={{width:"16px",height:"8px"}} src={arrow}/>
             </a>

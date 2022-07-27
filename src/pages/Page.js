@@ -3,7 +3,7 @@ import { globale } from '../App';
 import '../App.css';
 import Form from '../components/Form/Form';
 import Footer from '../components/Footer/Footer';
-import { BrowserRouter, Routes, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 const Page = () =>{
     const [page,setPage,pageInfo] = useContext(globale);
     return(
@@ -19,9 +19,9 @@ const Page = () =>{
             <BrowserRouter>
             <Routes>
             <>
-              <Route path="/" element={<Form/>}/>
-              <Route path="/page1" element={<Form/>}/>
-              <Route path="/page2" element={<Form/>}/>
+              <Route path="/" element={<Form page={page}/>}/>
+              <Route path="/page1" element={<Form page={page}/>}/>
+              <Route path="/page2" element={<Form page={page}/>}/>
             </>
             </Routes>
           </BrowserRouter>
