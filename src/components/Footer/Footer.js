@@ -15,6 +15,7 @@ const Footer = () =>{
         Object.keys(userDatas).forEach((items)=>{
             userDatas[items] = document.forms["register_form"][items.toString()].value
             console.log(userDatas);
+            setPageMax();
         });
     }    
     return(

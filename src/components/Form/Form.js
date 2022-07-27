@@ -3,18 +3,34 @@ import { globale } from "../../App";
 import '../Form/Form.css';
 import arrow from "./assets/arrow.png";
 
-const Form = (page) =>{
+let userDatas = 
+{
+    name:"",
+    number:"",
+    mail:"",
+    country:"",
+    range:"0.0"
+};
+
+const nextStep1 = ()=>{
+    Object.keys(userDatas).forEach((items)=>{
+        userDatas[items] = document.forms["register_form"][items.toString()].value
+        console.log(userDatas);
+    });
+}  
+const Form = () =>{
+    const [page,setPage] = useContext(globale);
     //function to open the privacy modal
     const openPrivacy = () => document.getElementById("privacy").style.display="block";  
         return(
-            <form name="register_form" className="montserrat w-100 flex flex-col">
+            <form name="register_form" className="montserrat w-100 flex flex-col" onSubmit={()=>nextStep1()}>
                 <div className="flex flex-row justify-between">
                     <label className="w-[270px] text-[14px] text-[#A4AEB4]">Full Name:</label>
                     <label className="w-[230px] text-[14px] text-[#A4AEB4]">Number:</label>
                 </div>
                 <div className="flex flex-row justify-between">
-                    <input type="text" name="name" className="w-[270px] text-[21px] text-black border-b-2 border-[#D5D9DC]" required></input>
-                    <input type="tel" name="number" className="w-[230px] text-[21px] text-black border-b-2 border-[#D5D9DC]" required></input>
+                    <input type="text" name="name" className="w-[270px] text-[21px] text-black border-b-2 border-[#D5D9DC]" required/>
+                    <input type="tel" name="number" className="w-[230px] text-[21px] text-black border-b-2 border-[#D5D9DC]" required/>
                 </div>
                 <div className="w-[540px] flex flex-col mx-auto">
                     <label className="text-[14px] text-[#A4AEB4]">Email Address:</label>

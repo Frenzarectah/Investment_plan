@@ -19,9 +19,9 @@ const Page = () =>{
             <BrowserRouter>
             <Routes>
             <>
-              <Route path="/" element={<Form page={page}/>}/>
-              <Route path="/page1" element={<Form page={page}/>}/>
-              <Route path="/page2" element={<Form page={page}/>}/>
+              <Route path="/" element={<Form/>}/>
+              <Route path="/page1" element={<Form/>}/>
+              <Route path="/page2" element={<Form/>}/>
             </>
             </Routes>
           </BrowserRouter>
