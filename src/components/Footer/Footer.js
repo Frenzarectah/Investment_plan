@@ -16,6 +16,7 @@ const Footer = () =>{
             userDatas[items] = document.forms["register_form"][items.toString()].value
             console.log(userDatas);
             setPageMax();
+            document.location.href="/page1";
         });
     }    
     return(
