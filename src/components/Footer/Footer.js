@@ -15,9 +15,9 @@ const Footer = () =>{
         Object.keys(userDatas).forEach((items)=>{
             userDatas[items] = document.forms["register_form"][items.toString()].value
             console.log(userDatas);
-            setPageMax();
-            document.location.href="/page1";
         });
+        document.location.href="/page1";
+        setPageMax()
     }    
     return(
         <footer className="mt-[15px] mr-0 w-full flex flex-row justify-between items-baseline">

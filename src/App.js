@@ -13,8 +13,7 @@ let userDatas =
     name:"",
     number:"",
     mail:"",
-    country:"",
-    range:"0.0"
+    country:""
 };
 export const userDB = React.createContext(userDatas);
 const pageInfo = {

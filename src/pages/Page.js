@@ -2,6 +2,7 @@ import React, {useContext } from 'react';
 import { globale } from '../App';
 import '../App.css';
 import Form from '../components/Form/Form';
+import Form1 from '../components/Form1/Form1';
 import Footer from '../components/Footer/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 const Page = () =>{
@@ -20,7 +21,7 @@ const Page = () =>{
             <Routes>
             <>
               <Route path="/" element={<Form/>}/>
-              <Route path="/page1" element={<Form/>}/>
+              <Route path="/page1" element={<Form1/>}/>
               <Route path="/page2" element={<Form/>}/>
             </>
             </Routes>
