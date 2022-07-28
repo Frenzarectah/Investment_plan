@@ -1,7 +1,9 @@
 # Investment Plan Simulation [WIP]
 
 This is my first #React.js App with the using of #tailwindcss for the page style, Stay tuned it will be amazing!<br>
-=)
+=)<br>
+You can try the embryonal-initial simulation <a href="https//investment-planz.netlify.app">here</a><br> 
+
 
 # Getting Started with Create React App
 
